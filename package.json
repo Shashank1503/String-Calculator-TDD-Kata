@@ -1,0 +1,23 @@
+{
+  "name": "string-calculator-tdd-kata",
+  "version": "1.0.0",
+  "description": "A Simple String calculator",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Shashank1503/String-Calculator-TDD-Kata.git"
+  },
+  "keywords": [
+    "Incubyte"
+  ],
+  "author": "Shashank Gupta",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Shashank1503/String-Calculator-TDD-Kata/issues"
+  },
+  "homepage": "https://github.com/Shashank1503/String-Calculator-TDD-Kata#readme"
+}
