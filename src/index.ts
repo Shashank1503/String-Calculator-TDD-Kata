@@ -1,11 +1,15 @@
 export const add = (numbers: string) => {
+  let sum = 0;
   if (numbers === "") {
     return 0;
   }
-  const [firstNumber, secondNumber] = numbers.split(",");
-  if (secondNumber === undefined) {
-    return parseInt(firstNumber);
+  const numbersArray = numbers.split(/[,\n]+/);
+  if (numbersArray[1] === undefined) {
+    return parseInt(numbersArray[0]);
   }
-  return parseInt(firstNumber) + parseInt(secondNumber);
+  numbersArray.forEach((number) => {
+    sum = sum + parseInt(number);
+  });
+  return sum;
 };
-console.log(add("12,12"));
+console.log(add("12,12\n13\n12,14\n12"));
