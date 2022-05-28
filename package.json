@@ -2,9 +2,9 @@
   "name": "string-calculator-tdd-kata",
   "version": "1.0.0",
   "description": "A Simple String calculator",
-  "main": "index.js",
+  "main": "src/index.ts",
   "scripts": {
-    "start": "node index.js",
+    "start": "npx tsc && node dist/index.js",
     "test": "jest"
   },
   "repository": {
@@ -19,5 +19,29 @@
   "bugs": {
     "url": "https://github.com/Shashank1503/String-Calculator-TDD-Kata/issues"
   },
-  "homepage": "https://github.com/Shashank1503/String-Calculator-TDD-Kata#readme"
+  "jest": {
+    "moduleFileExtensions": [
+      "js",
+      "json",
+      "ts"
+    ],
+    "rootDir": "src",
+    "testRegex": ".*\\.spec\\.ts$",
+    "transform": {
+      "^.+\\.(t|j)s$": "ts-jest"
+    },
+    "collectCoverageFrom": [
+      "**/*.(t|j)s"
+    ],
+    "coverageDirectory": "../coverage",
+    "testEnvironment": "node",
+    "testTimeout": 30000
+  },
+  "homepage": "https://github.com/Shashank1503/String-Calculator-TDD-Kata#readme",
+  "devDependencies": {
+    "@types/jest": "^27.5.1",
+    "jest": "^28.1.0",
+    "ts-jest": "^28.0.3",
+    "typescript": "^4.7.2"
+  }
 }
