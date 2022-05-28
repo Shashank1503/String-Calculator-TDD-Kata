@@ -15,3 +15,6 @@ test("check if more than 2 numbers are also supported", () => {
 test("check \n and , are also supported", () => {
   expect(add("1,2\n3,4\n5,6\n7,8\n9")).toBe(45);
 });
+test("check different delimeters are also suported are also supported", () => {
+  expect(add("//;\n1,2\n3;4\n5,6;7;8\n9")).toBe(45);
+});
