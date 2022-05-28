@@ -18,3 +18,8 @@ test("check \n and , are also supported", () => {
 test("check different delimeters are also suported are also supported", () => {
   expect(add("//;\n1,2\n3;4\n5,6;7;8\n9")).toBe(45);
 });
+test("check negative numbers not allowed", () => {
+  expect(() => add("//;\n1,2\n3;4\n5,6;7;-8\n9")).toThrow(
+    "negatives not allowed -8,"
+  );
+});
