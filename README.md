@@ -1,6 +1,8 @@
 # String-Calculator-TDD-Kata
 
-A Simple String Calculator
+A Simple String Calculator 
+
+Full Problem stated here :- https://blog.incubyte.co/blog/tdd-assessment/
 
 # Pre-Requisite
 
